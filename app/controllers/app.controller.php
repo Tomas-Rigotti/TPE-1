@@ -97,6 +97,7 @@ class LibrosController {
 }
 
 class AutoresController {
+    
     private $model;
     private $view;
 
