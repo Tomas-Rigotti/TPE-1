@@ -81,18 +81,8 @@ switch ($params[0]) {
         $logController = new LogController();
         $logController->logout();
         break;    
-
-
-    /*Ver como hacer que agregar-libro lleve a un formulario que mande el libro que hay que agregar. Usar header normal, despues de loguearse usar logheader.php
-    Ver tambien como hacer el tema de editar y borrar (capaz listando todos los items o autores generandolos con id, que esa id lleve a una pagina para editar o eliminar
-    como el ejemplo de las tareas de las clases practicas)*/
-
     default:
         $controller = new LibrosController();
         $controller->mostrarHome();
         break;
-    /*FALTA:
-    TODO EL ABM
-    LOGUEO Y DESLOGUEO
-    */ 
 }

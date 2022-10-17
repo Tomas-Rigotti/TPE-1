@@ -153,7 +153,6 @@ class AutoresController {
         $lugar_nac = $_POST['lugar_nac'];
         $fecha_nac = $_POST['fecha_nac'];
        
-        //$this->view->paginaprueba($nombre, $lugar_nac, $fecha_nac, $id);
         $this->model->editarAutor($nombre, $lugar_nac, $fecha_nac, $id);
         
         header("Location: " . BASE_URL . "autores");

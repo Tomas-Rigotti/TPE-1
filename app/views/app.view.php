@@ -6,7 +6,7 @@ class LibrosView {
     private $smarty;
 
     public function __construct() {
-        $this->smarty = new Smarty(); // inicializo Smarty
+        $this->smarty = new Smarty();
     }
 
     function mostrarHome($libros, $autores){
@@ -15,7 +15,7 @@ class LibrosView {
         $this->smarty->display('home.tpl');
     } 
 
-    function mostrarDetalleLibros($librosporID){ //preguntar si aca hay que poner el autor tambien
+    function mostrarDetalleLibros($librosporID){
         $this->smarty->assign('librosporID', $librosporID);
         $this->smarty->display('detalleLibros.tpl');        
     }
@@ -55,15 +55,5 @@ class AutoresView {
         $this->smarty->display('editarAutor.tpl');
         
     }
-
-    /*function paginaprueba($nombre,$lugar_nac,$fecha_nac,$id){
-    $this->smarty->assign('nombre', $nombre);
-    $this->smarty->assign('lugar_nac', $lugar_nac);
-    $this->smarty->assign('fecha_nac', $fecha_nac);
-    $this->smarty->assign('id', $id);
-    $this->smarty->display('paginaprueba.tpl');
-    
-}*/
-
 
 }

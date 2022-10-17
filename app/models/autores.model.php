@@ -24,7 +24,7 @@ class AutoresModel {
         
     }
 
-    function borrarAutor($id){ //preguntar si esta bien que al borrar el autor se borren todos sus libros
+    function borrarAutor($id){
         $db = $this->conectarDB();
         $consulta = $db->prepare("DELETE FROM autores WHERE id_autores = ?"); 
         $consulta->execute([$id]);
